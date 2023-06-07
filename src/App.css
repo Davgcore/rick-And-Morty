@@ -1,0 +1,117 @@
+body {
+    background-color: var(--body);
+    color: var(--letters);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Header's picture */
+
+.header__img{
+    max-width: 100vh;
+    display: flex;
+}
+
+.header__back{
+    position: relative;
+    max-width: 100vh;
+    border-radius: 1rem;
+    -webkit-box-shadow: 4px 4px 48px -7px rgba(39,232,84,0.69);
+-moz-box-shadow: 4px 4px 48px -7px rgba(39,232,84,0.69);
+box-shadow: 4px 4px 48px -7px rgba(39,232,84,0.69);
+}
+
+.header__from{
+    position: absolute;
+    max-width: 100vh;
+    margin-top: 100px;
+}
+
+/* Alerts */
+.alert-wrong{
+    margin: auto;
+    margin-top: 4rem;
+    width: 500px;
+}
+
+.alert-none {
+    margin: auto;
+    margin-top: 4rem;
+    width: 250px;
+    font-size: 20px;
+}
+
+/* Information's box */
+.location__box{
+    margin: auto;
+    margin-top: 5rem;
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem #a9a1a126;
+    background-color: var(--boxInfo);
+    gap: 1rem;
+    font-size: 20px;
+    max-width: 550px;
+    min-width: 550px;
+    -webkit-box-shadow: 4px 4px 48px -7px rgba(39,232,84,0.69);
+-moz-box-shadow: 4px 4px 48px -7px rgba(39,232,84,0.69);
+box-shadow: 4px 4px 48px -7px rgba(46, 86, 55, 0.69);
+max-width: 100vh;
+}
+
+.location__title{
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    color: var(--titleColor);
+}
+
+.location__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.location__item{
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location__span{
+    font-weight: 200;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--letterTitle);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --body: #05292E;
+    --letters: #FBFBFB;
+    --letterTitle: #b2acac
+    --boxInfo: #002126;
+    --titleColor:#1b781bfe;
+    height: 100vh;
+    width: 100vh;
+    position: relative;
+    margin-left: 400px;
+}

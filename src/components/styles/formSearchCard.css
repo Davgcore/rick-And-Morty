@@ -1,0 +1,116 @@
+a{
+    text-decoration: none;
+}
+
+.formSearch{
+    max-width: 1440px;
+    width: 400px;
+    height: 40px;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vh;
+}
+
+.form__input{
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: var(--inputColo);
+    color: var(--letter);
+    max-width: 100vh;
+}
+
+.form__btn{
+    width: 90px;
+    height: 40px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: var(--btnColor);
+    color: var(--inputColo);
+    cursor: pointer;
+}
+
+.form__btn:active {
+    background-color:#30bc30cd ;
+}
+
+.form__help{
+    width: 30px;
+    height: 30px;
+    margin-left: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    color: var(--inputColo);
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.form__help:hover {
+    user-select: none;
+    background-color: var(--hover);
+    transform: scale(1.05);
+} 
+
+.form__popover{
+    position: relative;
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
+.form__popover-content{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -100px;
+    transform: translate(0, 10px);
+    background-color: var(--btnColor);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+.form__popover-content:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: calc(50% - 60px);
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #bfbfbf transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.form__popover:hover .form__popover-content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.form__popover-message{
+    text-align: center;
+}
+
+
+
+
+
+:root {
+    --letter:  #000000;
+    --inputColo: #FBFBFB;
+    --btnColor: #1d931dcd;
+    --hover:#30bc30cd;
+    max-width: 100vh;
+}
